@@ -1,6 +1,6 @@
 {
   "name": "atnsaysdont-app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "engines": {
     "node": ">=16"
@@ -10,19 +10,18 @@
     "react-bootstrap": "^2.5.0",
     "react-native-web": "^0.18.9",
     "react-scripts": "^5.0.1",
+    "serve": "^14.0.1",
     "web-vitals": "^3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts build && serve -s build",
+    "start-local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
