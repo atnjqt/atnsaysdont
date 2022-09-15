@@ -21,7 +21,7 @@ Create your environment in AWS Console [here](https://us-east-1.console.aws.amaz
     eb init -i --profile=atn-developer
 
     # confirm configs
-    eb status --profile=atn=-developer
+    eb status --profile=atn-developer
 
     # deploy to environment
     eb deploy --profile=atn-developer
