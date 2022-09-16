@@ -26,7 +26,7 @@ function App() {
       <h3 class="welcome"> ❤️ 🧡 💛 💚 💙 💜 🤎 🖤 WE LOVE YOU GUYS! ❤️ 🧡 💛 💚 💙 💜 🤎 🖤 </h3>
       </Card.Header>
       <div className="App">
-          <iframe src="https://open.spotify.com/embed/playlist/73HZIXT0lpwtmq6b27CTDw?utm_source=generator" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/73HZIXT0lpwtmq6b27CTDw?utm_source=generator" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       </div>
       <Card.Footer>
         <Text>
