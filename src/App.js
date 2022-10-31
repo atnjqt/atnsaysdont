@@ -15,7 +15,7 @@ function App() {
     <Card>
       <Card.Header>
 
-        <h1 class="welcome"> <strong>COCKTAIL HOUR WEDDING MIX FOR ANA & NICK 2022</strong></h1>
+        <h1 class="welcome"> <strong><em>ATN_SAYS_DONT</em> (PROMO PAGE)</strong></h1>
 
 
       </Card.Header>
@@ -23,11 +23,11 @@ function App() {
 
     <Card>
       <Card.Header>
-      <h3 class="welcome"> ❤️ 🧡 💛 💚 💙 💜 🤎 🖤 WE LOVE YOU GUYS! ❤️ 🧡 💛 💚 💙 💜 🤎 🖤 </h3>
+      <h2 class="welcome"> ✟👨‍🍳🎨🎧✟🎨🎧👨‍🍳✟🎧👨‍🍳🎨✟   </h2>
       </Card.Header>
       <div className="App">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/73HZIXT0lpwtmq6b27CTDw?utm_source=generator" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>
+      <iframe width="70%" height="550" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1218675643&color=%23578af8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div>
+            <a href="https://soundcloud.com/etienne-jacquot" title="ATN SAYS DONT" target="_blank" rel="noreferrer">ATN SAYS DONT</a></div>      </div>
       <Card.Footer>
         <Text>
         {'\n'}{'\n'}{'\n'}
