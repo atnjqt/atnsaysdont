@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import { Card } from 'react-bootstrap';
 import { Text } from "react-native";
+import { motion } from "framer-motion";
 
 import Footer from './footer'
 
@@ -11,7 +12,7 @@ function App() {
   <div class="container" style={{ backgroundImage: "url(https://morphic-images.s3.us-east-2.amazonaws.com/30/Athleticon_Gradient_1800_2_95fdea7dc1.gif)",backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',}}> 
-        
+    
     <Card>
       <Card.Header>
 
@@ -19,8 +20,8 @@ function App() {
 
 
       </Card.Header>
-    </Card>            
-
+    </Card>
+                
     <Card>
       <Card.Header>
       <h2 class="welcome"> ✟👨‍🍳🎨🎧✟🎨🎧👨‍🍳✟🎧👨‍🍳🎨✟   </h2>
@@ -29,8 +30,26 @@ function App() {
       <iframe width="40%" height="550" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1218675643&color=%23578af8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div>
             <a href="https://soundcloud.com/etienne-jacquot" title="ATN SAYS DONT" target="_blank" rel="noreferrer">ATN SAYS DONT</a></div>      </div>
       <Card.Footer>
+        <motion.div
+        className="speechBubble"
+        aria-label="speechBubble"
+        role="img"
+        animate={{
+          scale:  [0, 7.8]
+        }}
+        transition={{
+          duration: 10,
+          ease: "circInOut",
+          times:  [0.0,0.3],
+          loop: Infinity,
+          repeatDelay: 0
+        }}>
+        <span role="img" aria-label="speechBubble">
+        🌊 🌊 🌊
+        </span>
+        </motion.div>
         <Text>
-        {'\n'}{'\n'}{'\n'}
+        {'\n'}{'\n'}{'\n'}{'\n'}
         </Text>
         <Footer>
         </Footer>

@@ -32,6 +32,11 @@
   font-weight: bold;
   font-family:"B612 Mono";
 }
+.speechBubble {
+  padding-left: 45%;
+  margin-bottom: 25px;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital@0;1&display=swap');
 
