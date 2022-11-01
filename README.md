@@ -1,17 +1,19 @@
 # Web App Promo Page - *ATNSAYSDONT*
 
-Developed by [Etienne P Jacquot](mailto:jacquot.etienne@gmail.com) (2022)
+Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2022)
+
+## Overview 
 
 - Web app promo page for my [Soundcloud](https://soundcloud.com/etienne-jacquot) content, etc: [http://saysdont.ejacquot.com](http://saysdont.ejacquot.com)
 
-## Overview
+## Getting Started
 
 We probably want to use *Terraform* to deploy this simple web app infrastructure, right? And we can use *git* and *eb* to version & deploy the latest promo page ideas.
 
 > ⚠️ **Update Terraform with AWS Named Profile:** in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
 > - For details on Elastic Beanstalk policies, see [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.managed-policies.html)
 
-- Try the following for a simple eb deployment,
+- Try the following for a simple eb deployment:
 
     ```bash
     # clone the simple web app repo
@@ -22,10 +24,11 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
     # create your environment on AWS
     terraform init
     terraform apply
-    
-    # wait for it to go live...
-    eb list --all --verbose --profile=atn-developer
+    ```
 
+- To deploy a new app version to eb:
+
+    ```bash
     ## deploy your eb code
     # check configs
     eb init -i --profile=atn-developer
@@ -36,10 +39,27 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
     # deploy to environment
     eb deploy --profile=atn-developer
     ```
+
+- When you want take down the live promo page (to save money, of course 💸):
+
+    ```bash
+    # tear down environment
+    terraform destroy
+    ```
     
+### Hosting with HTTPS
+
+>  🥳 Your simple web app soundcloud promo page: [https://saysdont.ejacquot.com](https://saysdont.ejacquot.com)
+
+- You need to deploy beanstalk with an application load balancer in order to use your ACM certificate with a CloudFront Distribution.
+    1. deploy the app
+    2. load balancer listener needs 443
+    3. elb sg needs inbound :443 
+    4. cloud front distribution takes some time to point to origin, use TLSv1 not the latest?
+    5. think about how to accomplish most of all this using terraform
 ______
 
-## Developement
+## Development
 
 - Demo for a simple **React** [single-page app](https://reactjs.org/docs/glossary.html#single-page-application)
 
@@ -48,6 +68,8 @@ ______
         ```bash
         npm run start-local
         ```
+
+### Notes 
 
 - Deployed on **AWS** [Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html) 
 

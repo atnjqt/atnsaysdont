@@ -47,9 +47,14 @@ resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   setting {
     namespace   = "aws:elasticbeanstalk:environment"
     name        = "EnvironmentType"
-    value       = "SingleInstance"
+    value       = "LoadBalanced"
   }
-  
+  setting {
+    namespace   = "aws:elasticbeanstalk:environment"
+    name        = "LoadBalancerType"
+    value       = "application"
+  }
+
   setting {
     namespace   = "aws:ec2:instances"
     name        = "InstanceTypes"
