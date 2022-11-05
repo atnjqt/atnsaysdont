@@ -52,10 +52,10 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
 >  🥳 Your simple web app soundcloud promo page: [https://saysdont.ejacquot.com](https://saysdont.ejacquot.com)
 
 - You need to deploy beanstalk with an application load balancer in order to use your ACM certificate with a CloudFront Distribution.
-    1. deploy the app
-    2. load balancer listener needs 443
-    3. elb sg needs inbound :443 
-    4. cloud front distribution takes some time to point to origin, use TLSv1 not the latest?
+    1. Deploy the app to eb
+    2. Load balancer listener needs :443 *.ejacquot.com forwarding to HTTP LB [here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName)
+    3. ELB SG needs inbound :443 0.0.0.0/0 (really just cloudfront) ([here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:))
+    4. cloud front distribution takes some time to point to origin, update origin with EB CNAME
     5. think about how to accomplish most of all this using terraform
 ______
 
