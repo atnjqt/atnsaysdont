@@ -265,6 +265,9 @@ class App extends React.Component {
             </Card.Footer>
           </Card>
 
+          <Footer>
+          </Footer>
+
       </div>
     );
   }

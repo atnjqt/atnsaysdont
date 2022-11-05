@@ -22,7 +22,7 @@ resource "aws_elastic_beanstalk_application" "eb_app" {
 resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   name                = "etienne-site"
   application         = aws_elastic_beanstalk_application.eb_app.name
-  solution_stack_name = "64bit Amazon Linux 2 v5.6.0 running Node.js 16"
+  solution_stack_name = "64bit Amazon Linux 2 v5.6.1 running Node.js 16"
   
   setting {
     namespace   = "aws:autoscaling:launchconfiguration"
