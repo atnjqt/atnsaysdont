@@ -196,24 +196,71 @@ class App extends React.Component {
               aria-label="speechBubble"
               role="img"
               animate={{
-                scale:  [0, 7.8]
+                scale:  [0, 8.8]
               }}
               transition={{
                 duration: 10,
                 ease: "circInOut",
                 times:  [0.0,0.3],
                 loop: Infinity,
-                repeatDelay: 0
+                repeatDelay: 0.2
               }}>
               <span role="img" aria-label="speechBubble">
               🌊 🌊 🌊
               </span>
               </motion.div>
               <Text>
-              {'\n'}{'\n'}{'\n'}{'\n'}
+              {'\n'}
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" width="10.5%" alt="Dracula"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" width="3%" alt="trident"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false' width="13%" alt="fantasma"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" width="3%" alt="trident"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0" width="12%" alt="Criatura"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" width="12%" alt="Spider-man"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" width="12%" alt="Sculpture"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"  width="10%" alt="donut"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn" width="19%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite" width="19%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius" width="6%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien" width="15%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj" width="12%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet" width="8%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut" width="8%"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/videojuegos/kirby/images/kirby-01.gif" draggable='false' alt="kirby" width="8%"></img>
+              </Draggable>
+              {'\n'}{'\n'}
               </Text>
-              <Footer>
-              </Footer>
               <draggableElements></draggableElements>
             </Card.Footer>
           </Card>
