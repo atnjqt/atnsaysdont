@@ -1,16 +1,17 @@
 # Web App Promo Page - *ATNSAYSDONT*
 
-Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2022)
+Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2023)
 
 ## Overview 
 
-- Web app promo page for my [Soundcloud](https://soundcloud.com/etienne-jacquot) content, etc: [http://saysdont.ejacquot.com](http://saysdont.ejacquot.com)
+- Web app promo page for [Soundcloud](https://soundcloud.com/etienne-jacquot) content, etc: [http://saysdont.ejacquot.com](http://saysdont.ejacquot.com), or really *whatever event* I want to celebrate with a vanity domain single-page application 🥳🥳
 
 ## Getting Started
 
-We probably want to use *Terraform* to deploy this simple web app infrastructure, right? And we can use *git* and *eb* to version & deploy the latest promo page ideas.
+Use *Terraform* to deploy the simple web app infrastructure, and *git* and *eb* to version & deploy the latest promo page ideas all to AWS.
 
-> ⚠️ **Update Terraform with AWS Named Profile:** in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
+> ⚠️ **Update Terraform with AWS Named Profile:** 
+> - in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
 > - For details on Elastic Beanstalk policies, see [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.managed-policies.html)
 
 - Try the following for a simple eb deployment:

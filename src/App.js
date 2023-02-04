@@ -212,52 +212,52 @@ class App extends React.Component {
               <Text>
               {'\n'}
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" width="10.5%" alt="Dracula"></img>
+                <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" width="3%" alt="trident"></img>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false' width="13%" alt="fantasma"></img>
+                <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false'alt="fantasma"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" width="3%" alt="trident"></img>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0" width="12%" alt="Criatura"></img>
+                  <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0"alt="Criatura"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" width="12%" alt="Spider-man"></img>
+                  <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" alt="Spider-man"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" width="12%" alt="Sculpture"></img>
+                  <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" alt="Sculpture"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"  width="10%" alt="donut"></img>
+                <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn" width="19%"></img>
+                <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite" width="19%"></img>
+                <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius" width="6%"></img>
+                <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien" width="15%"></img>
+                <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj" width="12%"></img>
+                <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet" width="8%"></img>
+                <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut" width="8%"></img>
+                <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
               </Draggable>
               <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/videojuegos/kirby/images/kirby-01.gif" draggable='false' alt="kirby" width="8%"></img>
+                <img src="https://www.gifss.com/videojuegos/kirby/images/kirby-01.gif" draggable='false' alt="kirby"></img>
               </Draggable>
               {'\n'}{'\n'}
               </Text>
