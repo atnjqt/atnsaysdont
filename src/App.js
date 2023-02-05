@@ -90,8 +90,10 @@ class App extends React.Component {
 
           <Card>
             <Card.Header>
-              <h1 class="welcome"> <strong><em>ATN_SAYS_DONT</em> (PROMO PAGE)</strong></h1>
-              <h2 class="welcome"> ✟👨‍🍳🎨🎧✟🎨🎧👨‍🍳✟🎧👨‍🍳🎨✟   </h2>
+              <h1 class="welcome"> <strong><em>Mr Says Dontato Head</em></strong></h1>
+              <h2 class="welcome"> 🎉🥔🎂🍟🎂🥔🎉🥔🎂🍟🎂🥔🎉   </h2>
+              <h3 class="welcome"> Arrange your mr potato head and send me a screenshot! </h3>
+
             </Card.Header>
           </Card>
 
@@ -102,7 +104,15 @@ class App extends React.Component {
               </div>
             </div>
           </Draggable>
-          
+
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/dvuvpAb.png" width='16%' className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+                    
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="parts">
@@ -183,20 +193,50 @@ class App extends React.Component {
             </div>
           </Draggable>
 
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/x84lCwz.png" width='10%' className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/OXGIjCP.png" width='10%' className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/CYHKhP3.png" width='9%' className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/IK80v3u.png" className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+
+
+
 
           <Card>
             <div className="App">
-              <iframe width="40%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1218675643&color=%23578af8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-              <div>
-                  <a href="https://soundcloud.com/etienne-jacquot" title="ATN SAYS DONT" target="_blank" rel="noreferrer">ATN SAYS DONT</a></div>      
-              </div>
+            <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
+            </div>
             <Card.Footer>
               <motion.div
               className="speechBubble"
               aria-label="speechBubble"
               role="img"
               animate={{
-                scale:  [0, 8.8]
+                scale:  [0, 6.5]
               }}
               transition={{
                 duration: 10,
@@ -255,9 +295,6 @@ class App extends React.Component {
               </Draggable>
               <Draggable {...dragHandlers}>
                 <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/videojuegos/kirby/images/kirby-01.gif" draggable='false' alt="kirby"></img>
               </Draggable>
               {'\n'}{'\n'}
               </Text>
