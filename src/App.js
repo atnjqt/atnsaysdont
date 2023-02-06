@@ -108,7 +108,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/dvuvpAb.png" width='16%' className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/dvuvpAb.png" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -196,7 +196,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/x84lCwz.png" width='10%' className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/x84lCwz.png" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -204,14 +204,14 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/OXGIjCP.png" width='10%' className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/OXGIjCP.png" className="handle"/>
               </div>
             </div>
           </Draggable>
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/CYHKhP3.png" width='9%' className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/CYHKhP3.png" className="handle"/>
               </div>
             </div>
           </Draggable>
