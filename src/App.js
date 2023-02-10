@@ -10,6 +10,24 @@ import { motion } from "framer-motion";
 import './App.css';
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {input_val: ''};
+  
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+  handleChange(event) {
+    this.setState({input_val: event.target.value});
+  }
+  
+  handleSubmit(event) {
+    alert('😂😂😂😂😂 ' + this.state.input_val);
+    event.preventDefault();
+  }
+  
   state = {
     activeDrags: 0,
     deltaPosition: {
@@ -218,91 +236,120 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/IK80v3u.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/IK80v3u.png" width='42px' className="handle"/>
               </div>
             </div>
           </Draggable>
 
-
-
-
-          <Card>
-            <div className="App">
-            <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/AFL5Ms4.gif" className="handle"/>
+              </div>
             </div>
-            <Card.Footer>
-              <motion.div
+          </Draggable>
+
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="textbox">
+              <form onSubmit={this.handleSubmit}>
+                <label>
+                  <input type="text" autocomplete="off" value={this.state.value} onChange={this.handleChange} />
+                  </label>
+                <input type="submit" value="Submit" />
+              </form>             
+              </div>
+            </div>
+          </Draggable>
+        
+          <Card>
+          <div className="App">
+            <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' transform="scaleX(-1)" hspace="0"></img>
+          </div>
+          <Card.Footer>
+          <motion.div
               className="speechBubble"
               aria-label="speechBubble"
               role="img"
               animate={{
-                scale:  [0, 6.5]
+                scaleY:[0.0,12.0],
               }}
               transition={{
-                duration: 10,
-                ease: "circInOut",
-                times:  [0.0,0.3],
+                duration: 8,
+                ease: "linear",
+                times:  [0.0,4.3],
                 loop: Infinity,
-                repeatDelay: 0.2
+                repeatDelay: 0.1
               }}>
               <span role="img" aria-label="speechBubble">
-              🌊 🌊 🌊
+              🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 
               </span>
-              </motion.div>
-              <Text>
-              {'\n'}
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false'alt="fantasma"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0"alt="Criatura"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" alt="Spider-man"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                  <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" alt="Sculpture"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet"></img>
-              </Draggable>
-              <Draggable {...dragHandlers}>
-                <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
-              </Draggable>
-              {'\n'}{'\n'}
-              </Text>
-              <draggableElements></draggableElements>
-            </Card.Footer>
+          </motion.div>
+          </Card.Footer>
+
+          <Text>
+          {'\n'}
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+              <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false'alt="fantasma"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+              <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+              <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0"alt="Criatura"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+              <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" alt="Spider-man"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+              <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" alt="Sculpture"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn"></img>
+          </Draggable>
+
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+                <img draggable="false" src="https://shkspr.mobi/blog/wp-content/uploads/2015/02/loop2.gif" alt="spinning rainbow" width="275px" className="handle"/>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+                <img draggable="false" src="https://i.gifer.com/K9m.webp" alt="spinning person" width="250px"/>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+                <img draggable="false" src="https://i.gifer.com/DFC.webp" alt="spinning hands" width="250px"/>
+          </Draggable>
+          <Draggable {...dragHandlers}>
+            <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite"></img>
+          </Draggable>
+          {'\n'}{'\n'}
+          </Text>
           </Card>
 
           <Footer>
+          
           </Footer>
 
       </div>

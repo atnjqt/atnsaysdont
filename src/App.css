@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -33,10 +35,15 @@
   font-family:"B612 Mono";
 }
 .speechBubble {
-  padding-left: 46.5%;
+  padding-left: 33.5%;
   margin-bottom: 25px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
+.container {
+  -webkit-overflow-scrolling: touch;
+}
 .container .parts img {
   position: absolute;
   -webkit-touch-callout: none;
@@ -51,6 +58,29 @@
   border-radius: 50%;
 
 }
+.container .textbox input {
+  height:42px;
+}
+input[type="text"]
+{
+    font-size:24px;
+    text-emphasis: filled double-circle blue;
+    text-decoration: red wavy underline;
+    font-family: "Andale Mono", "Courier New", monospace;
+
+
+  }
+  input[type=submit] {
+    background-color: #e951e9;
+    border: none;
+    color: white;
+    padding: 2px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+  }
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital@0;1&display=swap');
 
 @font-face {
