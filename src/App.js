@@ -112,13 +112,33 @@ class App extends React.Component {
               <h2 class="welcome"> 🎉🥔🎂🍟🎂🥔🎉🥔🎂🍟🎂🥔🎉   </h2>
               <h3 class="welcome"> Arrange your mr potato head and send me a screenshot! </h3>
 
+
+              <div className="App">
+                <iframe width="50%" height="5%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1233626212&color=%23578af8&inverse=false&auto_play=false&show_user=true"></iframe>
+                <div>
+                  <a href="https://soundcloud.com/etienne-jacquot" title="ATN SAYS DONT" target="_blank" rel="noreferrer">ATN SAYS DONT</a>
+                </div>      
+              </div>
             </Card.Header>
           </Card>
+        
+          <Card>
+            <Card.Footer>
 
+            </Card.Footer>
+          </Card>
+
+          <Card>
+            <div className="App">
+              <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' height="100%" transform="scaleX(-1)" hspace="0"></img>
+            </div>
+          </Card>
+
+          <Card>
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/kXbr8Tb.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/kXbr8Tb.png" alt="potato head body" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -126,7 +146,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/dvuvpAb.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/dvuvpAb.png" alt='etienne head' className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -134,7 +154,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="parts">
-                <img draggable="false" src="https://i.imgur.com/GONNbHf.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/GONNbHf.png" alt="potato head hat" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -142,7 +162,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/optSzq4.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/optSzq4.png" alt="potato head left arm" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -150,7 +170,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/qJDxc4o.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/qJDxc4o.png" alt="potato head right arm" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -158,7 +178,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/tIZGoeR.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/tIZGoeR.png" alt="potato head left ear"className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -166,7 +186,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/bKlbeXU.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/bKlbeXU.png" alt="potato head right ear"className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -174,7 +194,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/eUPbX3H.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/eUPbX3H.png" alt="potato head shoes" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -182,7 +202,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/voJPsR5.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/voJPsR5.png" alt="potato head nose and mouth" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -190,7 +210,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/dt2gqit.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/dt2gqit.png" alt="potato head eyes" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -198,7 +218,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/2POeyJZ.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/2POeyJZ.png" alt="potato head eyebrows" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -206,7 +226,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="etienne">
-                <img draggable="false" src="https://i1.sndcdn.com/avatars-pcpt6w9sE5FUfvmE-833Ruw-t500x500.jpg" className="handle"/>
+                <img draggable="false" src="https://i1.sndcdn.com/avatars-pcpt6w9sE5FUfvmE-833Ruw-t500x500.jpg" alt="etienne's soundcloud profile pic" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -214,7 +234,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/x84lCwz.png" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/x84lCwz.png" alt="etienne eyebrows" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -222,21 +242,7 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/OXGIjCP.png" className="handle"/>
-              </div>
-            </div>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <div class="container">
-              <div class="body">
-                <img draggable="false" src="https://i.imgur.com/CYHKhP3.png" className="handle"/>
-              </div>
-            </div>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <div class="container">
-              <div class="body">
-                <img draggable="false" src="https://i.imgur.com/IK80v3u.png" width='42px' className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/OXGIjCP.png" alt="etienne eyes" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -244,7 +250,23 @@ class App extends React.Component {
           <Draggable {...dragHandlers}>
             <div class="container">
               <div class="body">
-                <img draggable="false" src="https://i.imgur.com/AFL5Ms4.gif" className="handle"/>
+                <img draggable="false" src="https://i.imgur.com/CYHKhP3.png" alt="etienne nose and mouth" className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+          
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/IK80v3u.png" alt="etienne ear" width='42px' className="handle"/>
+              </div>
+            </div>
+          </Draggable>
+
+          <Draggable {...dragHandlers}>
+            <div class="container">
+              <div class="body">
+                <img draggable="false" src="https://i.imgur.com/AFL5Ms4.gif" alt="gif of text on fire, says dont" className="handle"/>
               </div>
             </div>
           </Draggable>
@@ -261,96 +283,87 @@ class App extends React.Component {
               </div>
             </div>
           </Draggable>
-        
-          <Card>
-          <div className="App">
-            <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' transform="scaleX(-1)" hspace="0"></img>
-          </div>
-          <Card.Footer>
-          <motion.div
-              className="speechBubble"
-              aria-label="speechBubble"
-              role="img"
-              animate={{
-                scaleY:[0.0,12.0],
-              }}
-              transition={{
-                duration: 8,
-                ease: "linear",
-                times:  [0.0,4.3],
-                loop: Infinity,
-                repeatDelay: 0.1
-              }}>
-              <span role="img" aria-label="speechBubble">
-              🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 
-              </span>
-          </motion.div>
-          </Card.Footer>
-
-          <Text>
-          {'\n'}
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-              <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false'alt="fantasma"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-              <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-              <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0"alt="Criatura"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-              <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" alt="Spider-man"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-              <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" alt="Sculpture"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn"></img>
-          </Draggable>
 
           <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius"></img>
+            <div class="container">
+              <div class="textbox">
+                <label>
+                    Choose a DJ:
+                    <input list="disc_jockeys" autocomplete="off" name="myDJ" />  
+                </label>   
+                <datalist id="disc_jockeys">
+                    <option value="DJ SAYSDONT" />
+                    <option value="DJ SWIB" />
+                    <option value="foobar" />   
+                </datalist>
+                </div>
+            </div>
           </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-                <img draggable="false" src="https://shkspr.mobi/blog/wp-content/uploads/2015/02/loop2.gif" alt="spinning rainbow" width="275px" className="handle"/>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-                <img draggable="false" src="https://i.gifer.com/K9m.webp" alt="spinning person" width="250px"/>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-                <img draggable="false" src="https://i.gifer.com/DFC.webp" alt="spinning hands" width="250px"/>
-          </Draggable>
-          <Draggable {...dragHandlers}>
-            <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite"></img>
-          </Draggable>
-          {'\n'}{'\n'}
-          </Text>
+          
           </Card>
 
-          <Footer>
-          
-          </Footer>
+          <Card>
+            <Card.Footer>
+              <Text>
+              {'\n'}
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/terror/dracula/dracula.gif" draggable='false' transform="scaleX(-1)" hspace="0" alt="Dracula"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/terror/fantasmas/fantasma-5.gif" draggable='false'alt="fantasma"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/terror/varios/39.gif" draggable='false' hspace="0" alt="trident"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/insectos/abejas/images/disfrazado-de-abeja.gif" draggable='false' hspace="0"alt="Criatura"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/comics/spiderman/images/001.gif" draggable='false' hspace="0" alt="Spider-man"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                  <img src="https://www.gifss.com/arquitectura/esculturas/images/gif-escultura-16.gif" draggable='false' hspace="0" alt="Sculpture"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/alimentos/donut/gif-donut.gif" draggable='false' alt="donut"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/animales/unicornios/images/unicornio-09.gif" draggable='false' alt="unicorn"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/cultura/horoscopos/acuario/acuario5.gif" draggable='false' alt="aquarius"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/espacio/alien/images/alien-61.gif" draggable='false' alt="alien"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/musica/dj/dj-disco01.gif" draggable='false' alt="dj"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/herramientas/varias/iman.gif" draggable='false' alt="magnet"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/profesiones/astronautas/astronauta.gif" draggable='false' alt="astronaut"></img>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                    <img draggable="false" src="https://shkspr.mobi/blog/wp-content/uploads/2015/02/loop2.gif" alt="spinning rainbow" width="275px" className="handle"/>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                    <img draggable="false" src="https://i.gifer.com/K9m.webp" alt="spinning person" width="250px"/>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                    <img draggable="false" src="https://i.gifer.com/DFC.webp" alt="spinning hands" width="250px"/>
+              </Draggable>
+              <Draggable {...dragHandlers}>
+                <img src="https://www.gifss.com/arquitectura/antenas/images/satelite-6.gif" draggable='false' alt="sattelite"></img>
+              </Draggable>
+              {'\n'}{'\n'}
+              </Text>
+            </Card.Footer>
+          </Card>
 
       </div>
     );
