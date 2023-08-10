@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom'
+import { ReactComponent as Brand } from '../apple_cage.svg'
 import './navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar"> 
       <div className="container-navbar">
-        <div className="logo">
+      <div className='logo'>
+        <Brand />
         </div>
         <div className="nav-elements">
           <ul>

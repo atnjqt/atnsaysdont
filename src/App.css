@@ -3,6 +3,7 @@
   max-width: 100%;
   overflow-x: hidden;
   background-position: initial; 
+  font-family:"B612 Mono";
 }
 
 .App-logo {
@@ -32,6 +33,21 @@
 }
 .welcome{
   text-align:center;
+  font-weight: bold;
+  font-family:"B612 Mono";
+}
+
+.promo_page{
+  text-align:left;
+  font-weight: bold;
+  font-family:"B612 Mono";
+}
+
+.wrap{
+  text-align:center;
+  float: right; 
+  margin-right: 10%;
+  margin-top: 2%;
   font-weight: bold;
   font-family:"B612 Mono";
 }

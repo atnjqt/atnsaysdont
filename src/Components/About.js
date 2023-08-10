@@ -13,11 +13,17 @@ class About extends React.Component {
                     <div class='App'>
                         <h1>About page</h1>            
                         <p>contact: 215-xxx-xxxx</p>
-                    </div>
+                        <p>email: jacquot.etienne@gmail.com</p>
+                    </div>    
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
 
-                </div>  
-
-                
+                </div>         
         );
     }
 }
