@@ -51,7 +51,7 @@ class Promo extends React.Component {
         <li><strong>2022:</strong>
           <ul>
             <li>Jazz Jam Residency (World Cafe Live Lounge)</li>
-            <li>House Party Residency (Ps&Qs South Street)</li>
+            <li>House Guest Residency (Ps&Qs South Street)</li>
           </ul>
         </li>
         <li><strong>2023:</strong>
