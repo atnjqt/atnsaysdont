@@ -16,13 +16,13 @@ provider "aws" {
 
 resource "aws_elastic_beanstalk_application" "eb_app" {
   name        = "atnsaysdont-tf"
-  description = "ATN SAYS DONT music promo website"
+  description = "Saysdont music promo website"
 }
 
 resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   name                = "etienne-site"
   application         = aws_elastic_beanstalk_application.eb_app.name
-  solution_stack_name = "64bit Amazon Linux 2 v5.6.4 running Node.js 16"
+  solution_stack_name = "64bit Amazon Linux 2023 v6.1.1 running Node.js 20"
   
   setting {
     namespace   = "aws:autoscaling:launchconfiguration"
