@@ -15,28 +15,6 @@ class Saapato extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br /> 
-                    <br />
-                    <br />
-                    <br />  
-                    <br />
-                    <br />
-                    <br />  
-                    <br />
-                    <br />
-                    <br />  
-                    <br />
-                    <br />
-                    <br />  
-                    <br />
-                    <br />
                     <br />  
                     <br />
                     <br />
