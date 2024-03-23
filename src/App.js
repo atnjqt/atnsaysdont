@@ -11,6 +11,7 @@ import Demo from './Components/Demo';
 import Navbar from './Components/NavBar';
 import Homepage from './Components/Homepage';
 import About from './Components/About';
+import Saapato from './Components/Saapato';
 
 class App extends React.Component {
 
@@ -32,6 +33,7 @@ class App extends React.Component {
           <Route path="/potatohead" element={<PotatoHead />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/about" element={<About />} />
+          <Route path="/saapato" element={<Saapato />} />
           {/* Add other routes for different pages if needed */}
           {/* For example: */}
           {/* <Route path="/about" element={<About />} /> */}
@@ -39,7 +41,7 @@ class App extends React.Component {
         </Routes>
         <Card>
             <Card.Footer>
-              <p class="welcome">saysdont 2023 © </p>
+              <p class="welcome">saysdont 2024 © </p>
             </Card.Footer>
           </Card>
       </Router>
