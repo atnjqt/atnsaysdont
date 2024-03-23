@@ -11,9 +11,8 @@ Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2024)
 
 Use *Terraform* to deploy the simple web app infrastructure, and *git* and *eb* to version & deploy the latest promo page ideas all to AWS.
 
-> ⚠️ **Update Terraform with AWS Named Profile:** 
-> - in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
-> - For details on Elastic Beanstalk policies, see [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.managed-policies.html)
+> ⚠️ **Update Terraform with Your AWS Named Profile:** 
+> - 🚨 Edit the [main.tf](./main.tf) for your specific aws required-provider resources, including the **named profile** value configured at `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). For details on Elastic Beanstalk policies generally, see [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.managed-policies.html).
 
 ### Infrastructure Deploy
 
