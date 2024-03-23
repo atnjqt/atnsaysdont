@@ -1,19 +1,23 @@
 # Web App Promo Page - *ATNSAYSDONT*
 
-Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2022)
+Developed by [Etienne Jacquot](mailto:jacquot.etienne@gmail.com) (2024)
 
 ## Overview 
 
-- Web app promo page for my [Soundcloud](https://soundcloud.com/etienne-jacquot) content, etc: [http://saysdont.ejacquot.com](http://saysdont.ejacquot.com)
+- Web app promo page for [Soundcloud](https://soundcloud.com/etienne-jacquot) content, etc: [http://saysdont.ejacquot.com](http://saysdont.ejacquot.com), or really *whatever event* I want to celebrate with a vanity domain single-page application 🥳🥳
+- <em>> Some additional testing & promo stuff!</em>
 
 ## Getting Started
 
-We probably want to use *Terraform* to deploy this simple web app infrastructure, right? And we can use *git* and *eb* to version & deploy the latest promo page ideas.
+Use *Terraform* to deploy the simple web app infrastructure, and *git* and *eb* to version & deploy the latest promo page ideas all to AWS.
 
-> ⚠️ **Update Terraform with AWS Named Profile:** in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
+> ⚠️ **Update Terraform with AWS Named Profile:** 
+> - in the [main.tf](./main.tf) aws required-provider resource, edit the **profile** value based on your `~/.aws/credentials` (see [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)). 
 > - For details on Elastic Beanstalk policies, see [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.managed-policies.html)
 
-- Try the following for a simple eb deployment:
+### Infrastructure Deploy
+
+- Try the following for a simple eb deployment IaC deployment. This spins out a simple AWS Elastic Beanstalk environment using NodeJS on Linux:
 
     ```bash
     # clone the simple web app repo
@@ -26,7 +30,9 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
     terraform apply
     ```
 
-- To deploy a new app version to eb:
+### Application Deployment
+
+- When your terraform apply is finished with, proceed to deploy a new app version to eb. This will update the live promo page with the latest changes commited to git on the current branch:
 
     ```bash
     ## deploy your eb code
@@ -40,6 +46,8 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
     eb deploy --profile=atn-developer
     ```
 
+### Tear Down (Optional but Recommended)
+
 - When you want take down the live promo page (to save money, of course 💸):
 
     ```bash
@@ -47,17 +55,18 @@ We probably want to use *Terraform* to deploy this simple web app infrastructure
     terraform destroy
     ```
     
-### Hosting with HTTPS
+### Hosting on AWS with HTTPS
 
->  🥳 Your simple web app soundcloud promo page: [https://saysdont.ejacquot.com](https://saysdont.ejacquot.com)
+>  🥳 Your simple web app soundcloud promo page: [https://saysdont.com](https://saysdont.com)
 
-- You need to deploy beanstalk with an application load balancer in order to use your ACM certificate with a CloudFront Distribution.
-    1. Deploy the app to eb
-    2. Load balancer listener needs :443 *.ejacquot.com forwarding to HTTP LB [here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName)
-    3. ELB SG needs inbound :443 0.0.0.0/0 (really just cloudfront) ([here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:))
-    4. cloud front distribution takes some time to point to origin, update origin with EB CNAME
-    5. think about how to accomplish most of all this using terraform
-______
+#### Manual Steps on AWS Console
+
+1. Deploy the app to EB ([here](https://us-east-1.console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environments)), per instructions above 🤗
+2. Load balancer listener needs `:443` for `*.saysdont.com` forwarding to HTTP LB, see [here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers:sort=loadBalancerName)
+3. ALB security group needs inbound rule, I set public via `:443` on `0.0.0.0/0`, but really just for inbound from cloudfront serving the app, see ([here](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:))
+4. cloudfront distribution takes some time to point to origin, update origin with Elastic Beanstalk CNAME
+5. A Route53 hosted zone for <b>*.saysdont.com</b> ([here](https://us-east-1.console.aws.amazon.com/route53/v2/hostedzones?region=us-east-1))& ACM certificate for `*.saysdont.com` ([here](https://us-east-1.console.aws.amazon.com/acm/home?region=us-east-1#)) linking to cloudfront CDN
+6. Continue to think about how to accomplish most of all this using terraform!
 
 ## Development
 
