@@ -58,7 +58,7 @@ resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   setting {
     namespace   = "aws:ec2:instances"
     name        = "InstanceTypes"
-    value       = "t4g.nano"
+    value       = "t4g.medium"
   }
 
   setting {
