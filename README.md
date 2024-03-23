@@ -45,6 +45,7 @@ Use *Terraform* to deploy the simple web app infrastructure, and *git* and *eb* 
     # deploy to environment
     eb deploy --profile=atn-developer
     ```
+    > if you get an error about certificate, run to check the value associated w your domain name (i.e. saysdont.com) `aws acm list-certificates --region=us-east-1 --profile=atn-developer | jq -r '.CertificateSummaryList[] | select(.DomainName=="*.saysdont.com") | .CertificateArn'` -- this guide assumes you have the ACM already created!
 
 ### Tear Down (Optional but Recommended)
 
