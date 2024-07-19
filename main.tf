@@ -19,7 +19,7 @@ resource "aws_elastic_beanstalk_application" "eb_app" {
   description = "Saysdont music promo website"
 }
 
-resource "aws_elastic_beanstalk_environment" "eb_app_env" {
+resource "aws_elastic_beanstalk_environment" "eb_env" {
   name                = "etienne-site"
   application         = aws_elastic_beanstalk_application.eb_app.name
   solution_stack_name = "64bit Amazon Linux 2023 v6.1.7 running Node.js 20"
@@ -74,16 +74,10 @@ data "aws_route53_zone" "saysdont" {
   private_zone = false
 }
 
-# Data source to find the LB associated with the EB environment
-data "aws_elb" "eb_lb" {
-  name = aws_elastic_beanstalk_environment.eb_app_env.load_balancers[0]
-}
-
-# Create a Route 53 Record to point a subdomain to the EB Load Balancer
 resource "aws_route53_record" "eb_dns" {
   zone_id = data.aws_route53_zone.saysdont.id
   name    = "app.saysdont.com"
   type    = "CNAME"
   ttl     = "300"
-  records = [data.aws_elb.eb_lb.dns_name]
+  records = [aws_elastic_beanstalk_environment.eb_env.endpoint_url]
 }
