@@ -19,12 +19,11 @@ class App extends React.Component {
 
     return (
       <Router>
-
+        <Navbar />
         <div class="container" style={{ backgroundImage: "url(https://morphic-images.s3.us-east-2.amazonaws.com/30/Athleticon_Gradient_1800_2_95fdea7dc1.gif)",
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',}}>
-          <Navbar />
         </div>        
 
         <Routes>

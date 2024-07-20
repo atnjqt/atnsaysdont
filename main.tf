@@ -19,7 +19,7 @@ resource "aws_elastic_beanstalk_application" "eb_app" {
   description = "Saysdont music promo website"
 }
 
-resource "aws_elastic_beanstalk_environment" "eb_env" {
+resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   name                = "etienne-site"
   application         = aws_elastic_beanstalk_application.eb_app.name
   solution_stack_name = "64bit Amazon Linux 2023 v6.1.7 running Node.js 20"
@@ -79,5 +79,5 @@ resource "aws_route53_record" "eb_dns" {
   name    = "app.saysdont.com"
   type    = "CNAME"
   ttl     = "300"
-  records = [aws_elastic_beanstalk_environment.eb_env.endpoint_url]
+  records = [aws_elastic_beanstalk_environment.eb_app_env.endpoint_url]
 }

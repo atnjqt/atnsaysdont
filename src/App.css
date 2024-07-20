@@ -5,6 +5,14 @@
   background-position: initial; 
   font-family:"B612 Mono";
 }
+.home-page-image{
+  width: 40%;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('https://images.unsplash.com/photo-1612838320303-3b3b3b3b3b3b');
+}
 
 .App-logo {
   height: 40vmin;
