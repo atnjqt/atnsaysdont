@@ -2,22 +2,22 @@
     color: white;
     background-color: #2124db; /* This is a complimentary green color. Adjust to your preference. */
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
-    font-size:x-large
+    font-size:large
 }
 .before-colon {
     font-weight: bold;
-    font-size: xx-large;
+    font-size: x-large;
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
 }
 .menu_links_soundcloud {
     color: white;
     background-color: #1fadff; /* This is a complimentary orange color. Adjust to your preference. */
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
-    font-size:x-large
+    font-size:large
 }
 .menu_links_preface {
     color: white;
     background-color: black; /* This is a complimentary orange color. Adjust to your preference. */
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
-    font-size:x-large
+    font-size:large
 }
