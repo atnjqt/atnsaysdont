@@ -1,7 +1,7 @@
 import React from 'react';
-import './Saapato.css';
+import './Buttafly.css';
 
-class Saapato extends React.Component {
+class Buttafly extends React.Component {
     render() {
         //const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
 
@@ -10,7 +10,7 @@ class Saapato extends React.Component {
                 <h1>DEMO PAGE ('link out to menus and stuff')</h1> 
                 <div class="container" style={{ backgroundImage: "url(https://img.saysdont.com/images/butterfly_promo.gif)",
                                                 backgroundPosition: 'center',
-                                                backgroundSize: 'cover',
+                                                backgroundSize: '50%',
                                                 backgroundRepeat: 'no-repeat',}}>
                     <br />
                     <br />
