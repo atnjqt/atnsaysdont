@@ -15,3 +15,9 @@
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
     font-size:x-large
 }
+.menu_links_preface {
+    color: white;
+    background-color: black; /* This is a complimentary orange color. Adjust to your preference. */
+    font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
+    font-size:x-large
+}
