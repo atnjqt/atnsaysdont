@@ -13,7 +13,7 @@ class Homepage extends React.Component {
                     <div class='.home-page-image'>
                     <Card>
                         <div className="App">
-                        <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' hspace="0"></img>
+                            <img src="https://i.imgur.com/IqSzeEw.png" className="homepage-image-mobile" draggable='false' hspace="0"></img>
                         </div>
                     </Card>
                 </div>  
