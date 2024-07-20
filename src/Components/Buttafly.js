@@ -7,15 +7,14 @@ class Buttafly extends React.Component {
 
         return (
             <div class='App'>
-                <h1>DEMO PAGE ('link out to menus and stuff')</h1> 
+            <br />
+            <br />
                 <div class="container" style={{ backgroundImage: "url(https://img.saysdont.com/images/butterfly_promo.gif)",
-                                                backgroundPosition: 'center bottom 1%',
-                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'bottom',
+                                                backgroundSize: '165%',
                                                 backgroundRepeat: 'no-repeat',}}>
                     <br />
-                    <br />  
-                    <br />
-                    <br />
+
                     <br />                   
                     <p><span class="before-colon"><a class="menu_links_preface">See more here:</a></span> <a href="https://linktr.ee/blackbuttafly" target="_blank" class="menu_links">linktr.ee/blackbuttafly</a></p>
                     <p><span class="before-colon"><a class="menu_links_preface">ig (BUTTAFLY):</a></span> <a href="https://www.instagram.com/blackbuttaflyofficial" target="_blank" class="menu_links">@blackbuttaflyofficial</a></p>
@@ -23,7 +22,6 @@ class Buttafly extends React.Component {
                     <p><span class="before-colon"><a class="menu_links_preface">------------------------------------</a></span></p>
                     <p><span class="before-colon"><a class="menu_links_preface">Spotify:</a></span> <a href="https://open.spotify.com/artist/24ZDIpf0bZvRzqOUSIMH5l" target="_blank" class="menu_links_soundcloud">SPOTIFY</a></p>
                     <p><span class="before-colon"><a class="menu_links_preface">Promo (new):</a></span> <a href="https://open.spotify.com/artist/24ZDIpf0bZvRzqOUSIMH5l" target="_blank" class="menu_links_soundcloud">Promo (NEW) 😎</a></p>
-
                     <br />
                     <br />
                     <br />                   
