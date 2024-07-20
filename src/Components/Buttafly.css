@@ -21,3 +21,12 @@
     font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif', Courier, monospace;
     font-size:large
 }
+
+/* Additional adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .menu_links, .menu_links_soundcloud, .menu_links_preface {
+        /* color: #FFFF00; Bright color for better visibility */
+        /* Adjust font size for mobile readability */
+        font-size: small;
+    }
+}
