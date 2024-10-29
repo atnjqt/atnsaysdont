@@ -5,6 +5,31 @@
   background-position: initial; 
   font-family:"B612 Mono";
 }
+.home-page-image{
+  width: 40%;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .homepage-image-mobile{
+    width: 75%; /* Example: Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the image if within a container */
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .home-page-image {
+    width: 80%; /* Increase the size for smaller devices if needed */
+    height: 80%;
+  }
+}
 
 .App-logo {
   height: 40vmin;

@@ -10,10 +10,10 @@ class Homepage extends React.Component {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',}}>
                     
-                    <div class='App'>
+                    <div class='.home-page-image'>
                     <Card>
                         <div className="App">
-                        <img src="https://i.imgur.com/IqSzeEw.png" draggable='false' height="100%" transform="scaleX(-1)" hspace="0"></img>
+                            <img src="https://i.imgur.com/IqSzeEw.png" className="homepage-image-mobile" draggable='false' hspace="0"></img>
                         </div>
                     </Card>
                 </div>  

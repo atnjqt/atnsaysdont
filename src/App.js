@@ -12,6 +12,8 @@ import Navbar from './Components/NavBar';
 import Homepage from './Components/Homepage';
 import About from './Components/About';
 import Saapato from './Components/Saapato';
+import Buttafly from './Components/Buttafly';
+
 
 class App extends React.Component {
 
@@ -19,12 +21,11 @@ class App extends React.Component {
 
     return (
       <Router>
-
+        <Navbar />
         <div class="container" style={{ backgroundImage: "url(https://morphic-images.s3.us-east-2.amazonaws.com/30/Athleticon_Gradient_1800_2_95fdea7dc1.gif)",
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',}}>
-          <Navbar />
         </div>        
 
         <Routes>
@@ -34,6 +35,7 @@ class App extends React.Component {
           <Route path="/demo" element={<Demo />} />
           <Route path="/about" element={<About />} />
           <Route path="/saapato" element={<Saapato />} />
+          <Route path="/buttafly" element={<Buttafly />} />
           {/* Add other routes for different pages if needed */}
           {/* For example: */}
           {/* <Route path="/about" element={<About />} /> */}

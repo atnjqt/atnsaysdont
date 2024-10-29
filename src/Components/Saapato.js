@@ -7,15 +7,11 @@ class Saapato extends React.Component {
 
         return (
             <div class='App'>
-                <h1>DEMO PAGE ('link out to menus and stuff')</h1> 
                 <div class="container" style={{ backgroundImage: "url(https://img.saysdont.com/images/frog_lilypad.gif)",
                                                 backgroundPosition: 'center',
                                                 backgroundSize: 'cover',
                                                 backgroundRepeat: 'no-repeat',}}>
                     <br />
-                    <br />
-                    <br />
-                    <br />  
                     <br />
                     <br />
                     <br />                   
