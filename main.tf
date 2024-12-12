@@ -64,7 +64,7 @@ resource "aws_elastic_beanstalk_environment" "eb_app_env" {
   setting {
     namespace   = "aws:elasticbeanstalk:environment:proxy"
     name        = "ProxyServer"
-    value       = "apache"
+    value       = "nginx"
   }
 }
 

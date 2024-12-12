@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="https://idp.pennkey.upenn.edu/idp/shibboleth"><ds:Signature>
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>QP4U4M/26C9wqo7h+Kljb0VnVP6uVE/MDMstIMi4QOQ=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+SF2OHyStsEi/8/0q7kKRV9NffeokozOLYFIidxY+hNsvbXGGKL0KrezgJPkR1mjTLaUKycKcChRg
+IJ6GQrZEwx55NRdhU2qqNDojKuEj8XWMoi67/4ql2/82I5F9AR9GEkq5CqD8dGmxVGDhhdiADlfj
+92rL4uVZHrpXfORA3W04MEOPbeCjML7F/hRubOuk+mVhC31F9qJ13Mcdi/wZEpDXbwlPCZUzhynw
+WipeS3LC+jLDhJp7GnkfQqESWDLCugqkCoP6GvR+KuXSJud7mV7VSyJYhH6g99eyHbtuwnZoTuYB
+Zjf/ry3UH0L0hCFfWTCZYyObH8RUHuvaY+oPvQ==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+gSEyWGq0oFqLcnC9o3WIw3q31ZSTyNF93fgesMikyTOJl5WhtvB0GE7ZGPfnrx2ewqVU0RqPtmvd
+F/bJTOpvdV+ORbRssNfSGIkPGiBAflwvarxyXyM2kWNTjSm0ptjlVMWStH1gB9vT2Z59BzIHmS8W
+hHxEBJLD70Rr4PUcoQQ5oLLLaaLBlV2+sILiwCWxVf2R1pTCjimjt0ylcoSNcSQHIYoGHtUcHbc5
+hpILSA69w4HLh1iM/cWovi7xiTeH0ivp3etoYKVGx0/Mf+QethuS5ZPilLlvjU+2uNqXqZsYr6ko
+sYiSV3lr2yKluOHdzBebmcWk5MQ4RZ2YEQmS4Q==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIDQDCCAiigAwIBAgIVAIW7U17BF4OIuf7KKeJ2n7iZo4sLMA0GCSqGSIb3DQEBBQUAMCAxHjAc
+BgNVBAMTFWlkcC5wZW5ua2V5LnVwZW5uLmVkdTAeFw0xMTAzMzExNTU0MDRaFw0zMTAzMzExNTU0
+MDRaMCAxHjAcBgNVBAMTFWlkcC5wZW5ua2V5LnVwZW5uLmVkdTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAIEhMlhqtKBai3JwvaN1iMN6t9WUk8jRfd34HrDIpMkziZeVobbwdBhO2Rj3
+568dnsKlVNEaj7Zr3Rf2yUzqb3VfjkW0bLDX0hiJDxogQH5cL2q8cl8jNpFjU40ptKbY5VTFkrR9
+YAfb09mefQcyB5kvFoR8RASSw+9Ea+D1HKEEOaCyy2miwZVdvrCC4sAlsVX9kdaUwo4po7dMpXKE
+jXEkByGKBh7VHB23OYaSC0gOvcOBy4dYjP3FqL4u8Yk3h9Ir6d3raGClRsdPzH/kHrYbkuWT4pS5
+b41Ptrjal6mbGK+pKLGIkld5a9sipbjh3cwXm5nFpOTEOEWdmBEJkuECAwEAAaNxMG8wTgYDVR0R
+BEcwRYIVaWRwLnBlbm5rZXkudXBlbm4uZWR1hixodHRwczovL2lkcC5wZW5ua2V5LnVwZW5uLmVk
+dS9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQUxDTQGrw4/7tu0/9D7BGoULqcWL4wDQYJKoZIhvcN
+AQEFBQADggEBAEkaTyQ3eC8thudSbBAh7bWADu2coDnw0FuWwcmI9ZbVHVU+HKbij5k5phFXDZaS
+TlZIwNkAeV4QTLS15TWmgsdaIxBBKfTfZJNXskfg6++2n91n4BfcDPFdjfn9sfp4DKK1/2es+Otg
+LQVIM1lMU3ZzNGaSr/6UhF5zvY+M1RpxwG3//nBm8y2rOAt7Y/REplQZ1ZwSoTxRxPhDa/Hflq+6
+mzWGdyCYDdq2Nn4Qk0bMnsNvZj3svVJeBfiGlnWwaH354x1lW83hhH/URqtxrgkftZ/oUVZCUruU
+3b5ytcHOYs/vXRTkRFsnb/ENiWe0xy1RO5prB/x5xli9fGaUdwE=
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+    <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <Extensions>
+            <shibmd:Scope regexp="false">upenn.edu</shibmd:Scope>
+        </Extensions>
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDQDCCAiigAwIBAgIVAIW7U17BF4OIuf7KKeJ2n7iZo4sLMA0GCSqGSIb3DQEB
+BQUAMCAxHjAcBgNVBAMTFWlkcC5wZW5ua2V5LnVwZW5uLmVkdTAeFw0xMTAzMzEx
+NTU0MDRaFw0zMTAzMzExNTU0MDRaMCAxHjAcBgNVBAMTFWlkcC5wZW5ua2V5LnVw
+ZW5uLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIEhMlhqtKBa
+i3JwvaN1iMN6t9WUk8jRfd34HrDIpMkziZeVobbwdBhO2Rj3568dnsKlVNEaj7Zr
+3Rf2yUzqb3VfjkW0bLDX0hiJDxogQH5cL2q8cl8jNpFjU40ptKbY5VTFkrR9YAfb
+09mefQcyB5kvFoR8RASSw+9Ea+D1HKEEOaCyy2miwZVdvrCC4sAlsVX9kdaUwo4p
+o7dMpXKEjXEkByGKBh7VHB23OYaSC0gOvcOBy4dYjP3FqL4u8Yk3h9Ir6d3raGCl
+RsdPzH/kHrYbkuWT4pS5b41Ptrjal6mbGK+pKLGIkld5a9sipbjh3cwXm5nFpOTE
+OEWdmBEJkuECAwEAAaNxMG8wTgYDVR0RBEcwRYIVaWRwLnBlbm5rZXkudXBlbm4u
+ZWR1hixodHRwczovL2lkcC5wZW5ua2V5LnVwZW5uLmVkdS9pZHAvc2hpYmJvbGV0
+aDAdBgNVHQ4EFgQUxDTQGrw4/7tu0/9D7BGoULqcWL4wDQYJKoZIhvcNAQEFBQAD
+ggEBAEkaTyQ3eC8thudSbBAh7bWADu2coDnw0FuWwcmI9ZbVHVU+HKbij5k5phFX
+DZaSTlZIwNkAeV4QTLS15TWmgsdaIxBBKfTfZJNXskfg6++2n91n4BfcDPFdjfn9
+sfp4DKK1/2es+OtgLQVIM1lMU3ZzNGaSr/6UhF5zvY+M1RpxwG3//nBm8y2rOAt7
+Y/REplQZ1ZwSoTxRxPhDa/Hflq+6mzWGdyCYDdq2Nn4Qk0bMnsNvZj3svVJeBfiG
+lnWwaH354x1lW83hhH/URqtxrgkftZ/oUVZCUruU3b5ytcHOYs/vXRTkRFsnb/EN
+iWe0xy1RO5prB/x5xli9fGaUdwE=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.pennkey.upenn.edu/idp/profile/SAML2/POST/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.pennkey.upenn.edu/idp/profile/SAML2/Redirect/SSO"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
